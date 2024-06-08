@@ -68,5 +68,6 @@ export async function createPost(
     }
   }
   revalidatePath(paths.topicShow(slugs.topicSlug))
+  revalidatePath(`/`)
   redirect(paths.postShow(slugs.topicSlug, post.id))
 } 
