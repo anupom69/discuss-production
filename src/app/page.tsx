@@ -6,7 +6,7 @@ import { fetchTopPost } from "@/db/queries/posts";
 
 export default function HomePage() {
   return (
-    <div className="grid grid-cols-4 gap-4 --4">
+    <div className="mt-4 md:mt-0 md:grid md:grid-cols-4 grid-cols-12 gap-4">
       <div className="col-span-3">
         <h1 className="text-xl m-2">Top Posts</h1>
         <PostList fetchData={fetchTopPost}/>
